@@ -1,0 +1,6 @@
+{
+  "name": "Arora's Dental Clinic Website",
+  "description": "Premium dental website for Arora's Dental Clinic in Ashok Vihar, Delhi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

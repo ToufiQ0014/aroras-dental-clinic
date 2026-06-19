@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arora's Dental Clinic</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      (function() {
+        const fetchDesc = Object.getOwnPropertyDescriptor(window, 'fetch');
+        if (fetchDesc && fetchDesc.get && !fetchDesc.set && fetchDesc.configurable) {
+          Object.defineProperty(window, 'fetch', {
+            get: fetchDesc.get,
+            set: function() { /* ignore attempts to set fetch */ },
+            configurable: true,
+            enumerable: fetchDesc.enumerable
+          });
+        }
+      })();
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
